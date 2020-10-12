@@ -4077,7 +4077,18 @@ bool operator!=(@\placeholder{T}@, @\placeholder{T}@);
 \end{codeblock}
 
 \pnum
-For every pair of promoted integral types
+For every integral type
+\tcode{\placeholder{L}}
+there exist candidate operator functions of the form
+\begin{codeblock}
+@\placeholder{L}@      operator%(@\placeholder{L}@, @\placeholder{L}@);
+@\placeholder{L}@      operator&(@\placeholder{L}@, @\placeholder{L}@);
+@\placeholder{L}@      operator^(@\placeholder{L}@, @\placeholder{L}@);
+@\placeholder{L}@      operator|(@\placeholder{L}@, @\placeholder{L}@);
+\end{codeblock}
+
+\pnum
+For every pair of distinct promoted integral types
 \tcode{\placeholder{L}}
 and
 \tcode{\placeholder{R}},
